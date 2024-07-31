@@ -36,6 +36,15 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 let marker, circle, zoomed;
 
+// const options = {
+//     enableHighAccuracy: true, 
+//     // Get high accuracy reading, if available (default false)
+//     timeout: 5000, 
+//     // Time to return a position successfully before error (default infinity)
+//     maximumAge: 2000, 
+//     // Milliseconds for which it is acceptable to use cached position (default 0)
+// };
+
 //fetch/request user location from the user after getting the permission
 navigator.geolocation.watchPosition(success, error);
 
